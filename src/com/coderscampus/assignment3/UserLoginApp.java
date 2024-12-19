@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 public class UserLoginApp {
     public static void main(String[] args) {
-        UserService userService = new UserService();
-        User[] users = userService.loadUsers(); 
+        String userDataFilePath = "data.txt"; 
+        UserService userService = new UserService(userDataFilePath);
+        User[] users = userService.loadUsers(userDataFilePath); 
 
         Scanner scanner = new Scanner(System.in);
         int attempts = 0;

@@ -1,14 +1,13 @@
 package com.coderscampus.assignment3;
 
 public class User {
+	
     private String email;
     private String password;
-    private String name;
 
-    public User(String email, String password, String name) {
+    public User(String email, String password) {
         this.email = email;
         this.password = password;
-        this.name = name;
     }
 
     public String getEmail() {
@@ -19,8 +18,8 @@ public class User {
         return password;
     }
 
-    public String getName() {
-        return name;
-    }
+	public String getName() {
+	
+		return null;
+	}
 }
-
